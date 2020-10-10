@@ -29,7 +29,6 @@ __all__ = ('handler', 'stats', 'create_task', 'RequestInfo')
 
 def weakref_info(coro): # noqa
     async def wrapper(reader: StreamReader, writer: StreamWriter, req_info: RequestInfo):
-        print(req_info.raw_headers)
         WEAK_READERS.add(reader)
         WEAK_WRITERS.add(writer)
         logger.info(f'readers: {len(WEAK_READERS)} :: writers {len(WEAK_WRITERS)} :: file stream {len(WEAK_FILE_STREAM)}')

@@ -28,7 +28,7 @@ assert json['file_hash_md5'] == hashlib.md5(data).hexdigest()
 
 ```json
 {
-   "path":"/home/kola/PycharmProjects/aio_upload_file/storage/47a65a7ba7dd2e63dcd83e923fc27138",
+   "path":"/storage/47a65a7ba7dd2e63dcd83e923fc27138",
    "file_hash_md5":"3d4ac3e5f8258a5fc1ab8d63fc3ea278"
 }
 ```
